@@ -1104,7 +1104,7 @@ class TorchFXImporter:
             else (node.kwargs["antialias"] if "antialias" in node.kwargs else False)
         )
 
-        assert recompute_scale_factor is None
+        assert recompute_scale_factor is False
         assert antialias is False
 
         if size is None:
